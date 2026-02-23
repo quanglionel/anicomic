@@ -1,0 +1,13 @@
+{
+  "name": "cpc-monitor",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@10.0.0",
+  "scripts": {
+    "dev:web": "pnpm --filter @cpc/web dev",
+    "dev:api": "pnpm --filter @cpc/api dev",
+    "build": "pnpm -r build",
+    "check": "pnpm -r check"
+  }
+}
+
