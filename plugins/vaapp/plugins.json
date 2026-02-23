@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "plugins": [
+    {
+      "id": "ophim_movie",
+      "name": "OPhim Movie",
+      "version": "1.0.0",
+      "scriptUrl": "https://raw.githubusercontent.com/quanglionel/anicomic/main/plugins/vaapp/ophim.js",
+      "iconUrl": "https://raw.githubusercontent.com/quanglionel/anicomic/main/apps/web/public/favicon.ico"
+    }
+  ]
+}
