@@ -3,7 +3,8 @@
 ## Trang thai hien tai
 - Bước 0: Hoan thanh.
 - Bước 1: Hoan thanh.
-- Bước 2 tro di: Chua bat dau.
+- Bước 2: Hoan thanh.
+- Bước 3 tro di: Chua bat dau.
 
 ## Cach lam theo tung buoc
 1. Chot muc tieu cua buoc.
