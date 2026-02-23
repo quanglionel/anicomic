@@ -7,7 +7,7 @@
     {
       "binding": "DB",
       "database_name": "anicomic-db",
-      "database_id": "00000000-0000-0000-0000-000000000000",
+      "database_id": "8ce757a2-468c-479c-8b9c-14931c739f23",
       "migrations_dir": "migrations"
     }
   ]
