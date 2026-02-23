@@ -4,7 +4,15 @@
 - Bước 0: Hoan thanh.
 - Bước 1: Hoan thanh.
 - Bước 2: Hoan thanh.
-- Bước 3 tro di: Chua bat dau.
+- Bước 3: Hoan thanh.
+- Bước 4: Hoan thanh.
+- Bước 5: Hoan thanh.
+- Bước 6: Hoan thanh.
+- Bước 7: Hoan thanh.
+- Bước 8: Hoan thanh.
+- Bước 9: Hoan thanh.
+- Bước 10: Hoan thanh.
+- Bước 11: Hoan thanh.
 
 ## Cach lam theo tung buoc
 1. Chot muc tieu cua buoc.

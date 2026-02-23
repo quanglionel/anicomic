@@ -1,0 +1,108 @@
+import type { PluginManifest } from "@cpc/shared/plugin";
+
+export const mockPluginManifests: PluginManifest[] = [
+  {
+    id: "animehub-alpha",
+    name: "AnimeHub Alpha",
+    version: "1.0.0",
+    enabled: true,
+    baseUrl: "https://animehub.example",
+    contentTypes: ["anime"],
+    language: "vi",
+    rateLimit: {
+      requestsPerMinute: 60,
+    },
+    parserRules: {
+      list: {
+        container: ".updates",
+        item: ".card",
+        title: ".title",
+        url: "a@href",
+        cover: "img@src",
+        latest: ".episode",
+      },
+      detail: {
+        title: ".title",
+        synopsis: ".summary",
+        cover: "img@src",
+        genres: ".genres",
+        status: ".status",
+        chapterContainer: ".episode-list",
+        chapterItem: ".episode-item",
+        chapterTitle: ".episode-title",
+        chapterUrl: "a@href",
+      },
+      search: {
+        endpoint: "/search",
+        method: "GET",
+        queryParam: "q",
+        selectors: {
+          container: ".search-result",
+          item: ".card",
+          title: ".title",
+          url: "a@href",
+          cover: "img@src",
+          latest: ".episode",
+        },
+      },
+      watchRead: {
+        container: ".watch-list",
+        item: ".watch-item",
+        label: ".watch-label",
+        url: "a@href",
+      },
+    },
+  },
+  {
+    id: "comicnest-beta",
+    name: "ComicNest Beta",
+    version: "1.0.0",
+    enabled: true,
+    baseUrl: "https://comicnest.example",
+    contentTypes: ["comic"],
+    language: "vi",
+    rateLimit: {
+      requestsPerMinute: 45,
+    },
+    parserRules: {
+      list: {
+        container: ".latest-list",
+        item: ".entry",
+        title: ".entry-title",
+        url: "a@href",
+        cover: "img@src",
+        latest: ".chapter-latest",
+      },
+      detail: {
+        title: ".manga-title",
+        synopsis: ".description",
+        cover: "img@src",
+        genres: ".genre-list",
+        status: ".manga-status",
+        chapterContainer: ".chapter-list",
+        chapterItem: ".chapter-item",
+        chapterTitle: ".chapter-name",
+        chapterUrl: "a@href",
+      },
+      search: {
+        endpoint: "/tim-kiem",
+        method: "GET",
+        queryParam: "keyword",
+        selectors: {
+          container: ".result-wrap",
+          item: ".result-item",
+          title: ".result-title",
+          url: "a@href",
+          cover: "img@src",
+          latest: ".chapter",
+        },
+      },
+      watchRead: {
+        container: ".chapter-read-list",
+        item: ".chapter-read-item",
+        label: ".chapter-read-label",
+        url: "a@href",
+      },
+    },
+  },
+];

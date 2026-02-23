@@ -30,6 +30,9 @@ Nen tang web xem anime/doc comic theo mo hinh plugin, toi uu chi phi (uu tien Cl
 - Cau hinh Codespaces da co san trong `.devcontainer/devcontainer.json`.
 - Huong dan chi tiet: `docs/CODESPACES.md`.
 
+## Deploy Cloudflare
+- Huong dan deploy + checklist van hanh: `docs/DEPLOY_CLOUDFLARE.md`.
+
 ## Yeu cau toi thieu de tiep tuc
 - Xac nhan stack: Next.js (frontend) + Hono Worker (API) + D1.
 - Xac nhan quan diem plugin: cho phep scraper rule-based (khong plugin JS remote tu do).

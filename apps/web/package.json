@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "check": "next lint"
+    "check": "next lint",
+    "build:pages": "pnpm dlx @cloudflare/next-on-pages@1",
+    "deploy:pages": "pnpm dlx wrangler pages deploy .vercel/output/static --project-name anicomic-web"
   },
   "dependencies": {
     "next": "^15.2.0",

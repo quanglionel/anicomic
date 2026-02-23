@@ -1,29 +1,5 @@
 import ThemeToggle from "./theme-toggle";
-
-const highlights = [
-  { label: "Plugin-ready", value: "Manifest + parser rules" },
-  { label: "Runtime", value: "Cloudflare Pages + Worker" },
-  { label: "Phase", value: "Step 2 - Frontend shell" },
-  { label: "Theme", value: "Mac dinh + Dem sau (Nord)" },
-];
-
-const cards = [
-  {
-    title: "Anime feed",
-    description: "Slot nay se noi API /list o buoc parser engine.",
-    tag: "list",
-  },
-  {
-    title: "Comic tracking",
-    description: "Slot nay se noi API /detail va lich su doc cua user.",
-    tag: "detail",
-  },
-  {
-    title: "Source registry",
-    description: "Slot nay se hien plugin kha dung sau khi co registry.",
-    tag: "plugin",
-  },
-];
+import LiveDashboard from "./live-dashboard";
 
 export default function HomePage() {
   return (
@@ -62,52 +38,16 @@ export default function HomePage() {
           <div className="pulse pulse-b" />
           <div className="monitor-card">
             <p>Live preview</p>
-            <strong>Pipeline health: ready</strong>
-            <span>Next target: Worker API scaffold</span>
+            <strong>Pipeline health: connected</strong>
+            <span>Step 8: Frontend connected to Worker API</span>
           </div>
         </div>
       </section>
 
-      <section className="highlight-grid" aria-label="Project highlights">
-        {highlights.map((item) => (
-          <article key={item.label} className="highlight-card">
-            <p>{item.label}</p>
-            <strong>{item.value}</strong>
-          </article>
-        ))}
-      </section>
-
-      <section className="content-grid">
-        <aside className="source-panel" id="sources">
-          <p className="eyebrow">Data sources</p>
-          <h3>Nguon du lieu (mock)</h3>
-          <article>
-            <strong>AnimeHub Alpha</strong>
-            <p>Pending validator + parser mapping.</p>
-          </article>
-          <article>
-            <strong>ComicNest Beta</strong>
-            <p>Pending parser rules + quality score.</p>
-          </article>
-          <article>
-            <strong>ReaderMirror</strong>
-            <p>Pending allowlist va chinh sach rate-limit.</p>
-          </article>
-        </aside>
-
-        <div className="cards-panel" id="updates">
-          {cards.map((card) => (
-            <article key={card.title} className="content-card">
-              <p className="tag">{card.tag}</p>
-              <h3>{card.title}</h3>
-              <p>{card.description}</p>
-            </article>
-          ))}
-        </div>
-      </section>
+      <LiveDashboard />
 
       <footer className="footer-note">
-        <p>Step 2 complete: UI shell + responsive layout + theme system.</p>
+        <p>Step 8 complete scope: web connected with Worker API end-to-end.</p>
       </footer>
     </main>
   );

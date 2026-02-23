@@ -6,13 +6,15 @@
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
     "build": "wrangler deploy --dry-run",
-    "check": "wrangler deploy --dry-run"
+    "check": "wrangler deploy --dry-run",
+    "db:migrate:local": "wrangler d1 migrations apply anicomic-db --local",
+    "db:migrate:remote": "wrangler d1 migrations apply anicomic-db --remote"
   },
   "dependencies": {
+    "@cpc/shared": "workspace:*",
     "hono": "^4.7.2"
   },
   "devDependencies": {
     "wrangler": "^4.5.0"
   }
 }
-
